@@ -19,23 +19,149 @@ import lombok.extern.slf4j.Slf4j;
 @RestController
 @RequestMapping("api/")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "")
+@CrossOrigin(origins = "http://localhost:3000/")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 public class JobsController {
 
 	private final JobsService service;
 	
-	@GetMapping("/")
-	public String jobsTest(Model model) {
-		log.info("JobsController jobsTest");
-		
-		List<JobsVo> list = service.selectAll();
-		model.addAttribute("jobList", list);
-		return "index.jsp";
-	}
-	
 	@GetMapping("jobsList")
 	public List<JobsVo> jobReact(){
-		
-		return null;
+		return service.selectAll();
 	}
 }
