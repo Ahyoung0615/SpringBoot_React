@@ -15,8 +15,9 @@ import lombok.ToString;
 @Builder
 public class JobsVo {
 
-	private String job_id;
-	private String job_title;
-	private int min_salary;
-	private int max_salary;
+	private String jobId;
+	private String jobTitle;
+	private int minSalary;
+	private int maxSalary;
+	private int seq;
 }

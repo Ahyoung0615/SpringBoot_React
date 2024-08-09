@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>지출결의서</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto 10px;
+        }
+        .header {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        .small-input {
+            width: 50px;
+            height: 20px;
+        }
+        .large-input {
+            width: 200px;
+            height: 20px;
+        }
+        .total-row {
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .footer input {
+            border: none;
+            border-bottom: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">지출결의서</div>
+        <table>
+            <tr>
+                <th>담당</th>
+                <th>이사</th>
+                <th>전무</th>
+                <th>대표</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td>지출 제목</td>
+                <td colspan="3"></td>
+                <td>작성 일자</td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>결재 일자</td>
+                <td colspan="3"></td>
+                <td>부서 / 담당</td>
+                <td colspan="2"></td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <th rowspan="2">지출 내역</th>
+                <th>항목</th>
+                <th>금액(원)</th>
+                <th>비고</th>
+            </tr>
+            <tr>
+                <td class="large-input"></td>
+                <td class="small-input"></td>
+                <td class="large-input"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="large-input"></td>
+                <td class="small-input"></td>
+                <td class="large-input"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="large-input"></td>
+                <td class="small-input"></td>
+                <td class="large-input"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="large-input"></td>
+                <td class="small-input"></td>
+                <td class="large-input"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="large-input"></td>
+                <td class="small-input"></td>
+                <td class="large-input"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="large-input"></td>
+                <td class="small-input"></td>
+                <td class="large-input"></td>
+            </tr>
+            <tr class="total-row">
+                <td>합계</td>
+                <td colspan="3"></td>
+            </tr>
+        </table>
+        <div class="footer">
+            위 금액을 청구하오니 결재해 주시기 바랍니다.<br><br>
+            <input type="text" size="4"> 년 <input type="text" size="2"> 월 <input type="text" size="2"> 일<br><br>
+            주식회사 썬컴퍼니
+        </div>
+    </div>
+</body>
+</html>

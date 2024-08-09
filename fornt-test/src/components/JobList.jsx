@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import JobsService from '../service/JobsService';
 
 
-const JobsListComponent = () => {
+const JobList = () => {
 
     const[jobs, setJobs] = React.useState([]);
 
@@ -13,6 +13,7 @@ const JobsListComponent = () => {
     }, []);
     return (
         <div>
+            <h1>new Job</h1>
             <table>
                 <tbody>
                     {
@@ -29,4 +30,4 @@ const JobsListComponent = () => {
     );
 };
 
-export default JobsListComponent;
+export default JobList;
